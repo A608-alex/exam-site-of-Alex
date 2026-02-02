@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Exam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Online Exam Portal</h2>
+
+<div id="login">
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="password" id="code" placeholder="Exam Code"><br><br>
+  <button onclick="startExam()">Start Exam</button>
+</div>
+
+<div id="exam" style="display:none;">
+  <p id="timer"></p>
+  <p>Q1. Capital of India?</p>
+  <input type="radio" name="q1"> Delhi<br>
+  <input type="radio" name="q1"> Mumbai<br><br>
+  <button onclick="submitExam()">Submit</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
